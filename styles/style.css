@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@515&display=swap');
 .header{
-    background-image: url(/images/headerBackground.jpg);
+    background-image: url("../images/headerBackground.jpg");
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -19,7 +20,7 @@
 }
 .about{
     padding: 1em;
-    margin: 2em 0;
+    /*margin: 2em 0;*/
 }
 .about h1{
     color:orange;
@@ -55,9 +56,28 @@
     color: orange;
 }
 .portfolio img{
-    margin: 1em;
+    /*margin: 1em;*/
     width: 100%;
 }
 .review h1{
     color: orange;
+}
+.review{
+    /*position: relative;*/
+    /*margin: 4em;*/
+    /*padding: 2em;*/
+}
+.review .card{
+    box-shadow: 0 0 20px;
+    /*margin: 1em;*/
+}
+.review .card-title{
+    font-family: 'Comfortaa', cursive;
+}
+.review .card .img{
+    width: 100%
+}
+.review .card:hover{
+    background-color: orange;
+    cursor: pointer;
 }

@@ -9,10 +9,11 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <title>Portfolio</title>
+
 </head>
 <body>
 <div class="container">
-   <nav class="navbar navbar-fixed-top navbar-dark bg-primary navbar-expand-lg">
+   <nav class="navbar fixed-top navbar-dark bg-primary navbar-expand-lg">
    <a href="#" class="navbar-brand fas fa-home"></a>
    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu">
        <span class="navbar-toggler-icon"></span>
@@ -20,10 +21,10 @@
    <div class="collapse navbar-collapse"
       id="mainmenu">
        <ul class="navbar-nav mк-4">
-           <li class="nav-item"><a href="#" class="nav-link">О нас</a></li>
-           <li class="nav-item"><a href="#" class="nav-link">Почему мы</a></li>
-           <li class="nav-item"><a href="#" class="nav-link">Отзывы</a></li>
-           <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+           <li class="nav-item"><a href="#about" class="nav-link">О нас</a></li>
+           <li class="nav-item"><a href="#portfolio" class="nav-link">Почему мы</a></li>
+           <li class="nav-item"><a href="#review" class="nav-link">Отзывы</a></li>
+           <li class="nav-item"><a href="#contacts" class="nav-link">Контакты</a></li>
        </ul>
    </div>
    </nav>
@@ -62,7 +63,7 @@
     </div>
     <!-- end about -->
    <!--begin portfolio-->
-    <div class="portfolio">
+    <div class="portfolio" id="portfolio">
        <h1 class="text-center">Курсы</h1>
        <div class="row">
            <div class="col-lg col-md col-sm"><img src="https://ladyfreelance.ru/wp-content/uploads/2017/05/портфолио.jpg" alt="no" class="img-fluid"></div>
@@ -73,17 +74,17 @@
     </div>
     <!--endportfolio-->
     <!--review-->
-    <div class="review">
+    <div class="review" id="review">
        <h1 class="text-center">Отзывы</h1>
        <div class="card-group">
-           <div class="card">
+           <div class="card col-md-6">
                <img class="card-img-top img-fluid" src="images/user1.jpg" alt="">
                <div class="card-body">
                    <h4 class="card-title">Василий Пупкин</h4>
                    <p class="card-text">Мне всё понравилось - лютый рекомендос</p>
                </div>
            </div>
-           <div class="card mx-3">
+           <div class="card col-md-6 mx-3">
                <img class="card-img-top img-fluid" src="images/user2.jpeg" alt="">
                <div class="card-body">
                    <h4 class="card-title">Пётр Михайлов</h4>
@@ -91,14 +92,14 @@
                </div>
            </div>
 
-           <div class="card mx-3">
+           <div class="card col-md-6 mx-3">
                <img class="card-img-top img-fluid" src="images/user3.jpg" alt="">
                <div class="card-body">
                    <h4 class="card-title">Зураб Иванишвили</h4>
                    <p class="card-text">А мне вообще тачку подарилои за этот отзыв. Такой я алчный перец</p>
                </div>
            </div>
-           <div class="card ">
+           <div class="card col-md-6">
                <img class="card-img-top img-fluid" src="images/user4.jpg" alt="">
                <div class="card-body">
                    <h4 class="card-title">Миклухо Маклауд</h4>
@@ -109,7 +110,7 @@
     </div>
 <!--end review-->
 <!--    contacts-->
-    <div class="contact-form">
+    <div class="contact-form" id="contacts">
         <div class="container">
             <div class="row">
                 <div class="col-lg4 col-md-4 col-sm-12">
@@ -134,5 +135,7 @@
         </div>
     </div>
 <!--    end contacts-->
+</div>
+    <script src="js/main.js"></script>
 </body>
 </html>

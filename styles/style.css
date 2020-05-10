@@ -83,4 +83,14 @@
 }
 .contact-form{
     margin: 2em 0;
+    padding: 2em;
+}
+.contact-form h1{
+    color: orange;
+}
+.contact-form .right{
+    max-width: 600px;
+}
+.contact-form .right .btn-primary{
+    background-color: orange;
 }
